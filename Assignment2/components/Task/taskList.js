@@ -12,7 +12,7 @@ export default function TaskList() {
     setTasks(tasks.map(task =>
       task.id === taskID ? { ...task, completed: !task.completed } : task
     ));
-  };
+  }; 
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>

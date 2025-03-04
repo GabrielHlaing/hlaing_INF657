@@ -11,7 +11,7 @@ export default function TaskDetails({ route, navigation }) {
       <Text style={styles.description}>{task.description}</Text>
       <Button title="Go Back" onPress={() => navigation.goBack()} />
     </View>
-  );
+  ); 
 }
 
 const styles = StyleSheet.create({
