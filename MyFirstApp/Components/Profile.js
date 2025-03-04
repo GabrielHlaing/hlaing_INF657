@@ -1,13 +1,23 @@
 import React from 'react';
+import {Text, View, Image, StyleSheet} from 'react-native';
 
 export default function Profile({name}) {
+  const image = require("../assets/UserPhoto.jpg");
     return (
-      <div>
-        <img
-          src="https://i.pravatar.cc/150?img=13" // I cannot use my photo, so I use a link for placeholder
-          alt="User Profile"
+      <View>
+        <Image
+          source = {image}
+          style = {styles.image}
         />
-        <h3>My name is {name}</h3>
-      </div>
+        <Text><h3>My name is {name}</h3></Text>
+      </View>
     );
   };
+
+  const styles = StyleSheet.create({
+    image: {
+      width: 150,
+      height: 150,
+      borderRadius: 75,
+    },
+  });

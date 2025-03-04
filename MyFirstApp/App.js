@@ -24,32 +24,27 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1, 
-    flexDirection: "column",
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
-
   header:{
-    height: "20%", 
-    width: "30%",
+    flex: 1,
+    width: "50%", 
     backgroundColor: "lightgreen",
     alignItems: "center",
     justifyContent: "center",
-    fontFamily: "sans-serif",
   },
-
   profile:{
-    height: "40%", 
-    width: "30%",
+    flex: 2,
+    width: "50%",
     backgroundColor: "skyblue",
     alignItems: "center",
     justifyContent: "center",
   },
-
   button:{
-    height: "20%", 
-    width: "30%",
+    flex: 1, 
+    width: "50%",
     backgroundColor: "yellow",
     alignItems: "center",
     justifyContent: "center",
